@@ -17,8 +17,11 @@ Smart tiling + label generation
 YOLOv8 training & GIS-ready output
 
 ✅ Municipal forestry–ready
+
 ✅ Handles shadow occlusion intelligently
+
 ✅ Exports predictions as GeoJSON for ArcGIS / QGIS
+
 ✅ Extensible for canopy %, carbon estimations, semi-supervised labeling
 
 📦 Pipeline Flow
@@ -38,15 +41,16 @@ urban-tree-detection/
 ├── requirements.txt                ← rasterio, ultralytics, shapely, geopandas, arcgis...
 └── README.md                       ← You are here
 
-✅ Current Capabilities
-Capability	Status
-Auto-tiling (640×640, overlap-aware)	✅
-Shadow-aware rectangular OR circular labels	✅
-Live Esri Feature Service ingestion	✅
-YOLOv8 training + eval (mAP, PR curves, overlays)	✅
-Export predictions to GeoJSON / ArcGIS-ready	✅
-Planned: NDVI masking & shadow suppression	🔄 next
-Planned: semi-supervised label validation	🔄 future
+| Capability                                              | Status    |
+| ------------------------------------------------------- | --------- |
+| Auto-tiling (640×640, overlap-aware)                    | ✅         |
+| Shadow-aware rectangular OR circular labels             | ✅         |
+| Live Esri Feature Service ingestion                     | ✅         |
+| YOLOv8 training + evaluation (mAP, PR curves, overlays) | ✅         |
+| Export predictions to GeoJSON / ArcGIS-ready            | ✅         |
+| NDVI masking & shadow suppression                       | 🔄 next   |
+| Semi-supervised label validation                        | 🔄 future |
+
 🌍 Real-World Use Cases
 
 Municipal forestry decision support
