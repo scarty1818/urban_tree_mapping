@@ -1,6 +1,6 @@
 🌳 Urban Tree Detection with Remote Sensing & YOLOv8
 
-Automated crown + shadow–aware urban tree detection
+Automated crown + shadow–aware detection pipeline
 Graduate Research — Saint Louis University GIS
 Stack: Google Colab · ArcGIS Online · Ultralytics YOLOv8 · rasterio · geopandas
 
@@ -10,19 +10,19 @@ This project builds a fully automated deep learning pipeline for urban tree crow
 
 High-resolution RGB aerial GeoTIFFs
 
-Esri Feature Service as ground truth (live ArcGIS REST endpoint)
+Esri Feature Service (ArcGIS REST) as ground truth
 
-Smart tiling + label generation
+Smart tiling + shadow-aware label generation
 
-YOLOv8 training & GIS-ready output
+YOLOv8 training + GIS-ready prediction exports
 
-✅ Municipal forestry–ready
+✅ Designed for municipal forestry workflows
 
-✅ Handles shadow occlusion intelligently
+✅ Shadow-occlusion robust (critical for urban scenes)
 
-✅ Exports predictions as GeoJSON for ArcGIS / QGIS
+✅ Outputs GeoJSON for ArcGIS / QGIS
 
-✅ Extensible for canopy %, carbon estimations, semi-supervised labeling
+✅ Extensible for canopy %, carbon, semi-supervised expansion
 
 📦 Pipeline Flow
 flowchart LR
