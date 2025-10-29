@@ -1,0 +1,24 @@
+name: urban-tree-detection
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch>=2.1
+  - torchvision
+  - rasterio>=1.3
+  - shapely>=2.0
+  - geopandas>=0.14
+  - fiona>=1.9
+  - pyproj>=3.6
+  - rtree>=1.2
+  - pip
+  - pip:
+      - ultralytics>=8.3,<9
+      - opencv-python-headless>=4.9
+      - pillow>=10.0
+      - numpy>=1.26
+      - pandas>=2.2
+      - ruamel.yaml>=0.18
+      - arcgis>=2.3
+      - tqdm>=4.66
+      - matplotlib>=3.8
