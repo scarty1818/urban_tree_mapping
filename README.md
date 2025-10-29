@@ -14,12 +14,13 @@ It ingests aerial RGB GeoTIFFs and Esri Feature Service tree inventory points, c
 ✅ Can export GeoJSON for GIS visualization in ArcGIS/QGIS
 ✅ Extensible for canopy cover, carbon estimates, or semi-supervised labeling
 
-flowchart LR
-    A[ArcGIS Feature Service<br/>+ RGB Aerial GeoTIFFs] --> B[Auto Tiling<br/>640×640 w/ overlap]
-    B --> C[Label Generation<br/>Rectangular or Circular]
-    C --> D[Balanced Train/Val/Test Split]
-    D --> E[YOLOv8 Training & Evaluation]
-    E --> F[Prediction Export<br/>(visual & GeoJSON/ArcGIS-ready)]
+| flowchart LR                                                                                     |
+|  ----------------------------------------------------------------------------------------------- |
+|    A[ArcGIS Feature Service<br/>+ RGB Aerial GeoTIFFs] | --> | B[Auto Tiling<br/>640×640 w/ overlap] |
+|   B --> C[Label Generation<br/>Rectangular or Circular] |                                      
+|    C --> D[Balanced Train/Val/Test Split]
+|    D --> E[YOLOv8 Training & Evaluation]
+|    E --> F[Prediction Export<br/>(visual & GeoJSON/ArcGIS-ready)]
 
 urban-tree-detection/
 │
