@@ -38,14 +38,13 @@ flowchart LR
 
 
 📁 Project Structure
-urban-tree-detection/
-│
-├── notebooks/
-│   └── urban_tree_pipeline.ipynb   ← Full Colab workflow
-│
-├── model_runs/                     ← Auto-saved tiles, labels, weights, metrics
-├── requirements.txt                ← rasterio, ultralytics, shapely, geopandas, arcgis...
-└── README.md                       ← You are here
+| Path                                  | Description                                        |
+| ------------------------------------- | -------------------------------------------------- |
+| `notebooks/urban_tree_pipeline.ipynb` | Full Colab workflow                                |
+| `model_runs/`                         | Auto-saved tiles, labels, weights, metrics         |
+| `requirements.txt`                    | rasterio, ultralytics, shapely, geopandas, arcgis… |
+| `README.md`                           | You are here                                       |
+
 
 | Capability                                              | Status    |
 | ------------------------------------------------------- | --------- |
