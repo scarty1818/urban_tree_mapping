@@ -26,10 +26,13 @@ YOLOv8 training & GIS-ready output
 
 📦 Pipeline Flow
 flowchart LR
-A([Aerial RGB GeoTIFFs + ArcGIS Tree Inventory]) --> B[Auto Tiling + Label Generation (Rect / Circle, Shadow-aware)]
-B --> C[Balanced Train / Val / Test Split]
-C --> D[YOLOv8 Training + Evaluation]
-D --> E[GIS-Ready Outputs (Visual + GeoJSON / ArcGIS Export)]
+  A([Aerial RGB GeoTIFFs<br/>+ ArcGIS Tree Inventory])
+  --> B[Auto Tiling & Label Generation<br/>(Rect / Circle, Shadow-aware)]
+
+  B --> C[Balanced Train / Val / Test Split]
+  C --> D[YOLOv8 Training & Evaluation]
+  D --> E[GIS-Ready Outputs<br/>(Visual + GeoJSON / ArcGIS Export)]
+
 
 📁 Project Structure
 urban-tree-detection/
