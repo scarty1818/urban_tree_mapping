@@ -1,59 +1,65 @@
 🌳 Urban Tree Detection with Remote Sensing & YOLOv8
 
-Automated Crown & Shadow–Aware Tree Detection from High-Resolution Aerial Imagery
-Graduate Research — Saint Louis University GIS | Google Colab + ArcGIS + Ultralytics
+Automated crown + shadow–aware urban tree detection
+Graduate Research — Saint Louis University GIS
+Stack: Google Colab · ArcGIS Online · Ultralytics YOLOv8 · rasterio · geopandas
 
-📌 Overview
+🚀 Overview
 
-This project builds a fully automated urban tree detection pipeline using Google Colab, ArcGIS Online, geospatial tiling, and YOLOv8 deep learning.
+This project builds a fully automated deep learning pipeline for urban tree crown detection using:
 
-It ingests aerial RGB GeoTIFFs and Esri Feature Service tree inventory points, converts them into intelligently labeled object detection tiles (with shadow-aware rectangular or circular bounding boxes), and trains a YOLOv8 model for crown detection in dense urban environments.
+High-resolution RGB aerial GeoTIFFs
 
-✅ Designed for real municipal forestry workflows
+Esri Feature Service as ground truth (live ArcGIS REST endpoint)
 
-✅ Shadow-aware labeling (important for urban imagery)
+Smart tiling + label generation
 
-✅ Can export GeoJSON for GIS visualization in ArcGIS/QGIS
+YOLOv8 training & GIS-ready output
 
-✅ Extensible for canopy cover, carbon estimates, or semi-supervised labeling
+✅ Municipal forestry–ready
+✅ Handles shadow occlusion intelligently
+✅ Exports predictions as GeoJSON for ArcGIS / QGIS
+✅ Extensible for canopy %, carbon estimations, semi-supervised labeling
 
-| flowchart LR                                                                                     |
-|  ----------------------------------------------------------------------------------------------- |
-|   A [ArcGIS Feature Service<br/>+ RGB Aerial GeoTIFFs] | --> | B [Auto Tiling<br/>640×640 w/ overlap] |
-|   B --> C[Label Generation<br/>Rectangular or Circular] |                                      
-|   C --> D[Balanced Train/Val/Test Split]
-|   D --> E[YOLOv8 Training & Evaluation]
-|   E --> F[Prediction Export<br/>(visual & GeoJSON/ArcGIS-ready)]
+📦 Pipeline Flow
+flowchart LR
+A([Aerial RGB GeoTIFFs + ArcGIS Tree Inventory]) --> B[Auto Tiling + Label Generation (Rect / Circle, Shadow-aware)]
+B --> C[Balanced Train / Val / Test Split]
+C --> D[YOLOv8 Training + Evaluation]
+D --> E[GIS-Ready Outputs (Visual + GeoJSON / ArcGIS Export)]
 
+📁 Project Structure
 urban-tree-detection/
 │
 ├── notebooks/
-│   └── urban_tree_pipeline.ipynb   ← full Google Colab workflow
-├── model_runs/                     ← auto-created per run (tiles, labels, weights, viz, metrics)
-├── README.md                       ← you are here
-└── requirements.txt                ← ultralytics, rasterio, shapely, geopandas, arcgis, etc.
+│   └── urban_tree_pipeline.ipynb   ← Full Colab workflow
+│
+├── model_runs/                     ← Auto-saved tiles, labels, weights, metrics
+├── requirements.txt                ← rasterio, ultralytics, shapely, geopandas, arcgis...
+└── README.md                       ← You are here
 
-| Capability                                                 | Status    |
-| ---------------------------------------------------------- | --------- |
-| Auto-tiling of aerial imagery (640×640, overlap-aware)     | ✅         |
-| Shadow-aware rectangular OR circular bounding boxes        | ✅         |
-| Esri Feature Service support (ArcGIS Online REST endpoint) | ✅         |
-| YOLOv8 dataset restructuring & training                    | ✅         |
-| Evaluation: mAP50/95, PR curves, overlays                  | ✅         |
-| Export detections to **GeoJSON (for GIS use)**             | ✅         |
-| Planned: NDVI/pre-filtering & shadow masking               | 🔄 next   |
-| Planned: Semi-supervised auto-label validation             | 🔄 future |
+✅ Current Capabilities
+Capability	Status
+Auto-tiling (640×640, overlap-aware)	✅
+Shadow-aware rectangular OR circular labels	✅
+Live Esri Feature Service ingestion	✅
+YOLOv8 training + eval (mAP, PR curves, overlays)	✅
+Export predictions to GeoJSON / ArcGIS-ready	✅
+Planned: NDVI masking & shadow suppression	🔄 next
+Planned: semi-supervised label validation	🔄 future
+🌍 Real-World Use Cases
 
-🎯 Real-World Use Cases
+Municipal forestry decision support
 
-- Municipal forestry workflows
-- Urban canopy monitoring & stormwater planning
-- Post-storm vegetation damage assessment
-- Climate resilience / heat mitigation models
+Urban canopy + heat & flood resilience modeling
 
-📢 Author
+Automated storm damage assessment
+
+Climate reporting / ESG automation
+
+👤 Author
 
 Stefany Carty
 Graduate Researcher — Saint Louis University GIS
-📍 Geospatial AI | Remote Sensing | Disaster Reponse | Threat Mapping
+_ Geospatial AI · Remote Sensing · Environmental Security_
 🔗 linkedin.com/in/stefanycarty
