@@ -9,13 +9,10 @@ Stack: Google Colab · ArcGIS Online · Ultralytics YOLOv8 · rasterio · geopan
 
 This project builds a fully automated deep learning pipeline for urban tree crown detection using:
 
-High-resolution RGB aerial GeoTIFFs
-
-Esri Feature Service (ArcGIS REST) as ground truth
-
-Smart tiling + shadow-aware label generation
-
-YOLOv8 training + GIS-ready prediction exports
+- High-resolution RGB aerial GeoTIFFs
+- Esri Feature Service (ArcGIS REST) as ground truth
+- Smart tiling + shadow-aware label generation
+- YOLOv8 training + GIS-ready prediction exports
 
 ✅ Designed for municipal forestry workflows
 
