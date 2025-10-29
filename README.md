@@ -10,8 +10,11 @@ This project builds a fully automated urban tree detection pipeline using Google
 It ingests aerial RGB GeoTIFFs and Esri Feature Service tree inventory points, converts them into intelligently labeled object detection tiles (with shadow-aware rectangular or circular bounding boxes), and trains a YOLOv8 model for crown detection in dense urban environments.
 
 ✅ Designed for real municipal forestry workflows
+
 ✅ Shadow-aware labeling (important for urban imagery)
+
 ✅ Can export GeoJSON for GIS visualization in ArcGIS/QGIS
+
 ✅ Extensible for canopy cover, carbon estimates, or semi-supervised labeling
 
 | flowchart LR                                                                                     |
