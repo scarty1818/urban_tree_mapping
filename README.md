@@ -2,6 +2,7 @@
 
 Automated crown + shadow–aware detection pipeline
 Graduate Research — Saint Louis University GIS
+
 Stack: Google Colab · ArcGIS Online · Ultralytics YOLOv8 · rasterio · geopandas
 
 🚀 Overview
