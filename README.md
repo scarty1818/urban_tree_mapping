@@ -16,11 +16,11 @@ It ingests aerial RGB GeoTIFFs and Esri Feature Service tree inventory points, c
 
 | flowchart LR                                                                                     |
 |  ----------------------------------------------------------------------------------------------- |
-|    A[ArcGIS Feature Service<br/>+ RGB Aerial GeoTIFFs] | --> | B[Auto Tiling<br/>640×640 w/ overlap] |
+|   A [ArcGIS Feature Service<br/>+ RGB Aerial GeoTIFFs] | --> | B [Auto Tiling<br/>640×640 w/ overlap] |
 |   B --> C[Label Generation<br/>Rectangular or Circular] |                                      
-|    C --> D[Balanced Train/Val/Test Split]
-|    D --> E[YOLOv8 Training & Evaluation]
-|    E --> F[Prediction Export<br/>(visual & GeoJSON/ArcGIS-ready)]
+|   C --> D[Balanced Train/Val/Test Split]
+|   D --> E[YOLOv8 Training & Evaluation]
+|   E --> F[Prediction Export<br/>(visual & GeoJSON/ArcGIS-ready)]
 
 urban-tree-detection/
 │
