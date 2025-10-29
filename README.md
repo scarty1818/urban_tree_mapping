@@ -42,13 +42,10 @@ urban-tree-detection/
 
 🎯 Real-World Use Cases
 
-Municipal forestry workflows
-
-Urban canopy monitoring & stormwater planning
-
-Post-storm vegetation damage assessment
-
-Climate resilience / heat mitigation models
+- Municipal forestry workflows
+- Urban canopy monitoring & stormwater planning
+- Post-storm vegetation damage assessment
+- Climate resilience / heat mitigation models
 
 📢 Author
 
